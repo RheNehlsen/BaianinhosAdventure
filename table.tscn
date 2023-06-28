@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://4vmh8iml5mio"]
+
+[ext_resource type="PackedScene" uid="uid://b2ll5yh8qpiuy" path="res://obj_mtl/tables/table_pool [full].obj" id="1_4nbon"]
+
+[node name="Table" instance=ExtResource("1_4nbon")]
