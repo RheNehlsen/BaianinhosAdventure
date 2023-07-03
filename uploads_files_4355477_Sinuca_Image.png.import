@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7eu8dmhbuxc8"
-path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_Image.png-d5e7363db366743e8addc92ffea2ef78.s3tc.ctex"
+path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_Image.png-bc104ee4aa7aeb95563454b476cd6ca9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://obj_mtl/tables/uploads_files_4355477_Sinuca_Image.png"
-dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_Image.png-d5e7363db366743e8addc92ffea2ef78.s3tc.ctex"]
+source_file="res://uploads_files_4355477_Sinuca_Image.png"
+dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_Image.png-bc104ee4aa7aeb95563454b476cd6ca9.s3tc.ctex"]
 
 [params]
 
