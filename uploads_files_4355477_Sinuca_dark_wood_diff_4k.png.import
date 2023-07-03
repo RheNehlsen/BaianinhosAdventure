@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e2cg11qud4pa"
-path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_dark_wood_diff_4k.png-49a8ae1c3e8da3fb1c2a7229826efc96.s3tc.ctex"
+path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_dark_wood_diff_4k.png-d0cc46029e0022e29e1c274b8acaa2c7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://obj_mtl/tables/uploads_files_4355477_Sinuca_dark_wood_diff_4k.png"
-dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_dark_wood_diff_4k.png-49a8ae1c3e8da3fb1c2a7229826efc96.s3tc.ctex"]
+source_file="res://uploads_files_4355477_Sinuca_dark_wood_diff_4k.png"
+dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_dark_wood_diff_4k.png-d0cc46029e0022e29e1c274b8acaa2c7.s3tc.ctex"]
 
 [params]
 

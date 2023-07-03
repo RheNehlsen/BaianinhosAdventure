@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt6ingqkpd2c1"
-path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png-14edaa182b55a6bf1b38fd27e1722b1f.s3tc.ctex"
+path.s3tc="res://.godot/imported/uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png-66c3c4576969d10225d6c23cf47ed206.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://obj_mtl/tables/uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png"
-dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png-14edaa182b55a6bf1b38fd27e1722b1f.s3tc.ctex"]
+source_file="res://uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png"
+dest_files=["res://.godot/imported/uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png-66c3c4576969d10225d6c23cf47ed206.s3tc.ctex"]
 
 [params]
 

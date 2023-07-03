@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5ah6ojdcq0ca"
-path.s3tc="res://.godot/imported/baianinho.png-6bcb1cd4ed36aaab2c629fcffdb80ee7.s3tc.ctex"
+path.s3tc="res://.godot/imported/baianinho.png-585016b07392dc366c4a54f93c688d46.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://obj_mtl/baianinho.png"
-dest_files=["res://.godot/imported/baianinho.png-6bcb1cd4ed36aaab2c629fcffdb80ee7.s3tc.ctex"]
+source_file="res://baianinho.png"
+dest_files=["res://.godot/imported/baianinho.png-585016b07392dc366c4a54f93c688d46.s3tc.ctex"]
 
 [params]
 
