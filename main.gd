@@ -17,7 +17,7 @@ func _ready():
 func _input(event):
 	
 	if Input.is_action_just_pressed("esc"):
-		get_tree().quit()
+		get_tree().change_scene_to_file("res://game_over.tscn")
 	
 	if Input.is_action_just_pressed("f1"):
 		troca_camera(true)
@@ -37,7 +37,7 @@ func _process(delta):
 	contador.text = str(pontos)
 	
 	if pontos == 6:
-		get_tree().quit()
+		get_tree().change_scene_to_file("res://game_over.tscn")
 	
 	if bola_branca.position.y < mesa.position.y - 3:
 		bola_branca.set_linear_velocity(Vector3(0,0,0))
