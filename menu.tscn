@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bc06jismt8mgs"]
+[gd_scene load_steps=8 format=3 uid="uid://bc06jismt8mgs"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_6gg4m"]
 [ext_resource type="Texture2D" uid="uid://5ah6ojdcq0ca" path="res://baianinho.png" id="1_vufwv"]
@@ -27,9 +27,19 @@ line_spacing = 8.0
 font = SubResource("SystemFont_m2bcb")
 font_size = 45
 font_color = Color(0, 0, 0, 1)
+outline_color = Color(1, 1, 1, 0.898039)
 shadow_size = 10
 shadow_color = Color(1, 1, 1, 0.184314)
 shadow_offset = Vector2(10, 10)
+
+[sub_resource type="SystemFont" id="SystemFont_4f4i5"]
+font_weight = 825
+
+[sub_resource type="LabelSettings" id="LabelSettings_k2ti7"]
+font = SubResource("SystemFont_4f4i5")
+font_size = 26
+font_color = Color(0, 0, 0, 1)
+outline_size = 5
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -40,28 +50,22 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6gg4m")
 
+[node name="Baianinho" type="Sprite2D" parent="."]
+position = Vector2(576.5, 324)
+scale = Vector2(1.53467, 1.296)
+texture = ExtResource("1_vufwv")
+script = SubResource("GDScript_kagy3")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 69.0
-offset_top = -33.0
-offset_right = 234.0
-offset_bottom = 33.0
+offset_left = 945.0
+offset_top = 254.0
+offset_right = 1116.0
+offset_bottom = 292.0
 grow_vertical = 2
-
-[node name="Baianinho" type="Sprite2D" parent="VBoxContainer"]
-position = Vector2(507.5, 33)
-scale = Vector2(1.53467, 1.296)
-texture = ExtResource("1_vufwv")
-script = SubResource("GDScript_kagy3")
-
-[node name="StartButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-tooltip_text = "Start the game!"
-mouse_default_cursor_shape = 2
-text = "Start"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -81,5 +85,15 @@ label_settings = SubResource("LabelSettings_73yb5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 208.0
+offset_right = 412.0
+offset_bottom = 247.0
+text = "Pressione Enter 
+para começar!"
+label_settings = SubResource("LabelSettings_k2ti7")
+horizontal_alignment = 1
+
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
