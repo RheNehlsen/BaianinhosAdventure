@@ -1,13 +1,17 @@
 extends Control
 
 
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$VBoxContainer/StartButton.grab_focus()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("Enter"):
-		get_tree().change_scene_to_file('res://copia_main.tscn')
+	pass
+
 
 func _on_start_button_pressed():
-	pass
+	get_tree().change_scene_to_file("res://copia_main.tscn")
 
 
 func _on_quit_button_pressed():
