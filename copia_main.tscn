@@ -655,7 +655,8 @@ mesh = SubResource("ArrayMesh_x1sr8")
 skeleton = NodePath("")
 
 [node name="Luminaria" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00328692, 1.94557, 0.000887938)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00328692, 1.94557, 0.0712918)
+visible = false
 mesh = SubResource("ArrayMesh_hdhp8")
 skeleton = NodePath("")
 
@@ -753,7 +754,7 @@ spot_range = 13.4111
 spot_angle = 78.1357
 
 [node name="CameraGlobal" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.909519, 0.415662, 0, -0.415662, 0.909519, 0, 2, 2.59964)
+transform = Transform3D(0.996199, 0.0857313, -0.0154007, 0, 0.17681, 0.984245, 0.0871036, -0.980504, 0.176138, 0, 2.68656, 0.463604)
 
 [node name="Taco" parent="." instance=ExtResource("13_68cjj")]
 transform = Transform3D(1, 0, 0, 0, 0.99941, 0.0343413, 0, -0.0343413, 0.99941, 0.019, 1.092, 1.487)

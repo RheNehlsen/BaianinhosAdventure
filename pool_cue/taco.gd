@@ -3,15 +3,9 @@ extends Node3D
 const HORIZONTAL_SENS = 0.3
 const MAX_DEPTH = 0.4
 
-var lbl : Label
-
 var pre_move_pos : Vector3
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
-	lbl = get_node("../Label")
-	
+
 	
 func _input(event):
 	

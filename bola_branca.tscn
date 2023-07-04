@@ -1,6 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5ncgfjctp36l"]
-
-[ext_resource type="Script" path="res://bola_branca.gd" id="1_0fike"]
+[gd_scene load_steps=5 format=3 uid="uid://b5ncgfjctp36l"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_yuari"]
 radius = 0.028
@@ -48,7 +46,6 @@ collision_layer = 2
 collision_mask = 3
 max_contacts_reported = 5
 contact_monitor = true
-script = ExtResource("1_0fike")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_yuari")
