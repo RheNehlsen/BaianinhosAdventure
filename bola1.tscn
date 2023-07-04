@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dacrfptaseto0"]
 
-[ext_resource type="Texture2D" uid="uid://cyok3dlm7iljy" path="res://obj_mtl/tables/uploads_files_4355477_Sinuca_bolas.png" id="1_etpah"]
+[ext_resource type="Texture2D" uid="uid://cyok3dlm7iljy" path="res://uploads_files_4355477_Sinuca_bolas.png" id="1_etpah"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rcc10"]
 resource_name = "MaterialBola1"
@@ -46,7 +46,7 @@ radius = 0.028
 
 [node name="Bola1" type="RigidBody3D"]
 
-[node name="BolaMesh" type="MeshInstance3D" parent="." groups=["bolas"]]
+[node name="BolaMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.325067, -0.787434, -0.523718, 0.802247, 0.522839, -0.288165, 0.500731, -0.326478, 0.801674, 0, 0, 0)
 mesh = SubResource("ArrayMesh_umnbx")
 skeleton = NodePath("")

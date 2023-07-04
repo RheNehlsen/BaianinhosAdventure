@@ -6,12 +6,8 @@
 [node name="Taco" type="Node3D"]
 
 [node name="pool_cue" parent="." instance=ExtResource("1_2cfdr")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(1, 3.49076e-05, 1.52545e-12, 8.18486e-18, -4.37114e-08, 1, 3.49076e-05, -1, -4.37114e-08, 0, 0, -0.000319958)
 script = ExtResource("2_4e0xg")
 
 [node name="CameraTaco" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.85445, 0.519534, 0, -0.519534, 0.85445, 0.0219811, 0.376318, -0.0795909)
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0

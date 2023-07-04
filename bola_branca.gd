@@ -16,11 +16,12 @@ func _process(delta):
 
 func _on_body_entered(body):
 	
-	if body.is_in_group("bolas"):
-		var collision_normal = bodyState.get_contact_local_normal(0)
-		collision_normal.y = 0
-		body.apply_central_impulse(1.5*collision_normal)
-		apply_central_impulse(-1.5*collision_normal)
+#	if body.is_in_group("bolas"):
+#		var collision_normal = bodyState.get_contact_local_normal(0)
+#		collision_normal.y = 0
+#		body.apply_central_impulse(1.5*collision_normal)
+#		apply_central_impulse(-1.5*collision_normal)
+	pass
 		
 func _integrate_forces(state):
 	bodyState = state

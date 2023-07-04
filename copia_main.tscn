@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://dokw75ybvmsoj"]
+[gd_scene load_steps=57 format=3 uid="uid://dokw75ybvmsoj"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_35wi1"]
 [ext_resource type="Texture2D" uid="uid://7eu8dmhbuxc8" path="res://uploads_files_4355477_Sinuca_Image.png" id="1_d4iv5"]
@@ -635,6 +635,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_lsadb")
 
+[sub_resource type="SystemFont" id="SystemFont_kf2b5"]
+font_weight = 425
+
+[sub_resource type="FontVariation" id="FontVariation_ai250"]
+base_font = SubResource("SystemFont_kf2b5")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1b5qe"]
+font = SubResource("FontVariation_ai250")
+font_size = 100
+font_color = Color(1, 1, 0.313726, 1)
+
 [node name="main" type="Node3D"]
 script = ExtResource("1_35wi1")
 
@@ -699,39 +710,39 @@ skeleton = NodePath("")
 transform = Transform3D(0.999985, 0, 0.00546285, 0, 1, 0, -0.00546285, 0, 0.999985, 0.0194922, 0.977564, -0.00453642)
 
 [node name="bola_branca" parent="TampoMesa" instance=ExtResource("12_clido")]
-transform = Transform3D(0.999994, 0, -0.00335103, 0, 1, 0, 0.00335103, 0, 0.999994, -0.0234382, 0.0722439, 0.646821)
+transform = Transform3D(0.999994, 0, -0.00335103, 0, 1, 0, 0.00335103, 0, 0.999994, -0.0197054, 0.0722439, -0.0364711)
 
 [node name="bola1" parent="TampoMesa" groups=["bolas"] instance=ExtResource("6_molfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0891124, 0.0717551, -0.519368)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0891124, 0.072, -0.519368)
 collision_layer = 2
 collision_mask = 3
+mass = 0.5
 max_contacts_reported = 5
 contact_monitor = true
-sleeping = true
 
 [node name="bola2" parent="TampoMesa" groups=["bolas"] instance=ExtResource("14_tvytu")]
-transform = Transform3D(0.959479, -0.281781, -0.000221154, 0.281772, 0.959454, -0.00730954, 0.00227187, 0.00695103, 0.999973, -0.0144806, 0.0680861, -0.51896)
-sleeping = true
+transform = Transform3D(0.959479, -0.281781, -0.000221154, 0.281772, 0.959454, -0.00730954, 0.00227187, 0.00695103, 0.999973, -0.0144806, 0.072, -0.51896)
+mass = 0.5
 script = null
 
 [node name="bola3" parent="TampoMesa" groups=["bolas"] instance=ExtResource("15_o5w0g")]
-transform = Transform3D(1, 0.000279334, 7.14697e-06, -0.000279334, 0.998692, 0.0511325, 7.15023e-06, -0.0511325, 0.998692, 0.0646744, 0.0676227, -0.518528)
-sleeping = true
+transform = Transform3D(1, 0.000279334, 7.1479e-06, -0.000279334, 0.998692, 0.0511325, 7.15069e-06, -0.0511325, 0.998692, 0.0646744, 0.072, -0.518528)
+mass = 0.5
 script = null
 
 [node name="bola4" parent="TampoMesa" groups=["bolas"] instance=ExtResource("16_cg0p2")]
-transform = Transform3D(1, 0, -4.19095e-09, 0, 1, 0, 4.19095e-09, 0, 1, -0.0509624, 0.0767385, -0.46488)
-sleeping = true
+transform = Transform3D(1, 0, -4.19095e-09, 0, 1, 0, 4.19095e-09, 0, 1, -0.0509624, 0.072, -0.46488)
+mass = 0.5
 script = null
 
 [node name="bola5" parent="TampoMesa" groups=["bolas"] instance=ExtResource("17_rovrx")]
-transform = Transform3D(1, -0.00108209, -1.11759e-08, 0.00108209, 0.999999, 5.91137e-06, 1.86265e-09, -5.91137e-06, 1, 0.02819, 0.0728543, -0.463931)
-sleeping = true
+transform = Transform3D(1, -0.00108209, -1.11759e-08, 0.00108209, 0.999999, 5.91137e-06, 1.86265e-09, -5.91137e-06, 1, 0.02819, 0.072, -0.463931)
+mass = 0.5
 script = null
 
 [node name="bola6" parent="TampoMesa" groups=["bolas"] instance=ExtResource("18_sw173")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00682232, 0.0620643, -0.407132)
-sleeping = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0645995, 0.072, -0.370643)
+mass = 0.5
 script = null
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
@@ -747,6 +758,13 @@ transform = Transform3D(1, 0, 0, 0, 0.909519, 0.415662, 0, -0.415662, 0.909519, 
 [node name="Taco" parent="." instance=ExtResource("13_68cjj")]
 transform = Transform3D(1, 0, 0, 0, 0.99941, 0.0343413, 0, -0.0343413, 0.99941, 0.019, 1.092, 1.487)
 
+[node name="contador" type="Label" parent="."]
+offset_left = 1023.0
+offset_top = 4.0
+offset_right = 1142.0
+offset_bottom = 52.0
+text = "0"
+label_settings = SubResource("LabelSettings_1b5qe")
+horizontal_alignment = 2
+
 [connection signal="body_entered" from="TampoMesa/bola_branca" to="TampoMesa/bola_branca" method="_on_body_entered"]
-[connection signal="body_entered" from="TampoMesa/bola1" to="." method="_on_bola_1_body_entered"]
-[connection signal="body_entered" from="TampoMesa/bola1" to="TampoMesa/bola_branca" method="_on_bola_1_body_entered"]

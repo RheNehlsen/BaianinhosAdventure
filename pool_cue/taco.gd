@@ -18,11 +18,6 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * HORIZONTAL_SENS))
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	lbl.text = "{0}, {1}, {2}".format([position.x, position.y, position.z])
-
 func move_to_branca(pos):
 	var cam = $"../CameraTaco"
 	set_position(Vector3(pos.x, pos.y, pos.z - 0.4))
