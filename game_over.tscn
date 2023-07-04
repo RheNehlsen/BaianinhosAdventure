@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://6ixbwhe0n3yl"]
+
+[ext_resource type="Texture2D" uid="uid://b1w3i014sbk1l" path="res://trophy_baianinho.jpg" id="1_2lx1t"]
+[ext_resource type="Script" path="res://game_over.gd" id="1_ayq4l"]
+[ext_resource type="Texture2D" uid="uid://buturtaws6tmd" path="res://trophy_icon.png" id="2_uiuin"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qwe88"]
+font_size = 60
+outline_size = 6
+outline_color = Color(0.0705882, 0.305882, 1, 1)
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ayq4l")
+
+[node name="TrophyBaianinho" type="Sprite2D" parent="."]
+position = Vector2(576.5, 323.5)
+scale = Vector2(1.44125, 1.21388)
+texture = ExtResource("1_2lx1t")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 179.0
+offset_right = 1136.0
+offset_bottom = 265.0
+text = "Fim de Jogo!
+"
+label_settings = SubResource("LabelSettings_qwe88")
+
+[node name="TrophyIcon" type="Sprite2D" parent="."]
+position = Vector2(961, 352)
+scale = Vector2(0.128326, 0.104267)
+texture = ExtResource("2_uiuin")
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 222.0
+offset_right = 250.0
+offset_bottom = 282.0
+text = "Recomeçar
+"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 334.0
+offset_right = 258.0
+offset_bottom = 394.0
+text = "Sair"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

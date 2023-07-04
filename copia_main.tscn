@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://dokw75ybvmsoj"]
+[gd_scene load_steps=56 format=3 uid="uid://bmwrwsuw5hlly"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_35wi1"]
 [ext_resource type="Texture2D" uid="uid://7eu8dmhbuxc8" path="res://uploads_files_4355477_Sinuca_Image.png" id="1_d4iv5"]
@@ -6,19 +6,18 @@
 [ext_resource type="Texture2D" uid="uid://e2cg11qud4pa" path="res://uploads_files_4355477_Sinuca_dark_wood_diff_4k.png" id="3_pd7ik"]
 [ext_resource type="Texture2D" uid="uid://be4rj4wj2lseb" path="res://uploads_files_4355477_Sinuca_dark_wood_rough_4k.png" id="4_klti6"]
 [ext_resource type="Texture2D" uid="uid://c0fyobqnp4iyp" path="res://uploads_files_4355477_Sinuca_dark_wood_disp_4k.png" id="5_fcurm"]
-[ext_resource type="PackedScene" uid="uid://dacrfptaseto0" path="res://bola1.tscn" id="6_molfv"]
 [ext_resource type="Texture2D" uid="uid://dv858rrtde72i" path="res://uploads_files_4355477_Sinuca_wood_table_001_diff_4k.png" id="8_43og8"]
 [ext_resource type="Texture2D" uid="uid://bwunyrr24l5ws" path="res://uploads_files_4355477_Sinuca_wood_table_001_nor_gl_4k.png" id="9_6j70p"]
 [ext_resource type="PackedScene" uid="uid://cucslpnp3hgxn" path="res://tampo_mesa.tscn" id="10_41gff"]
 [ext_resource type="Texture2D" uid="uid://5ah6ojdcq0ca" path="res://baianinho.png" id="10_yi14b"]
 [ext_resource type="Texture2D" uid="uid://dt6ingqkpd2c1" path="res://uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png" id="11_vq0bv"]
 [ext_resource type="PackedScene" uid="uid://b5ncgfjctp36l" path="res://bola_branca.tscn" id="12_clido"]
-[ext_resource type="PackedScene" uid="uid://d2kirf65csiql" path="res://taco.tscn" id="13_68cjj"]
-[ext_resource type="PackedScene" uid="uid://btfqdiawesefy" path="res://bola_2.tscn" id="14_tvytu"]
-[ext_resource type="PackedScene" uid="uid://b6uv5focrxgar" path="res://bola_3.tscn" id="15_o5w0g"]
-[ext_resource type="PackedScene" uid="uid://d14nea8lqfo6y" path="res://bola_4.tscn" id="16_cg0p2"]
-[ext_resource type="PackedScene" uid="uid://c4amuofboqyk4" path="res://bola_5.tscn" id="17_rovrx"]
-[ext_resource type="PackedScene" uid="uid://c8iiy8uvcbp6n" path="res://bola_6.tscn" id="18_sw173"]
+[ext_resource type="PackedScene" path="res://taco.tscn" id="13_68cjj"]
+[ext_resource type="PackedScene" path="res://bola_2.tscn" id="14_tvytu"]
+[ext_resource type="PackedScene" path="res://bola_3.tscn" id="15_o5w0g"]
+[ext_resource type="PackedScene" path="res://bola_4.tscn" id="16_cg0p2"]
+[ext_resource type="PackedScene" path="res://bola_5.tscn" id="17_rovrx"]
+[ext_resource type="PackedScene" path="res://bola_6.tscn" id="18_sw173"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brfx8"]
 resource_name = "Madeira_Preta"
@@ -655,7 +654,8 @@ mesh = SubResource("ArrayMesh_x1sr8")
 skeleton = NodePath("")
 
 [node name="Luminaria" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00328692, 1.94557, 0.000887938)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00328692, 1.94557, 0.0712918)
+visible = false
 mesh = SubResource("ArrayMesh_hdhp8")
 skeleton = NodePath("")
 
@@ -712,14 +712,6 @@ transform = Transform3D(0.999985, 0, 0.00546285, 0, 1, 0, -0.00546285, 0, 0.9999
 [node name="bola_branca" parent="TampoMesa" instance=ExtResource("12_clido")]
 transform = Transform3D(0.999994, 0, -0.00335103, 0, 1, 0, 0.00335103, 0, 0.999994, -0.0197054, 0.0722439, -0.0364711)
 
-[node name="bola1" parent="TampoMesa" groups=["bolas"] instance=ExtResource("6_molfv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0891124, 0.072, -0.519368)
-collision_layer = 2
-collision_mask = 3
-mass = 0.5
-max_contacts_reported = 5
-contact_monitor = true
-
 [node name="bola2" parent="TampoMesa" groups=["bolas"] instance=ExtResource("14_tvytu")]
 transform = Transform3D(0.959479, -0.281781, -0.000221154, 0.281772, 0.959454, -0.00730954, 0.00227187, 0.00695103, 0.999973, -0.0144806, 0.072, -0.51896)
 mass = 0.5
@@ -753,7 +745,7 @@ spot_range = 13.4111
 spot_angle = 78.1357
 
 [node name="CameraGlobal" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.909519, 0.415662, 0, -0.415662, 0.909519, 0, 2, 2.59964)
+transform = Transform3D(0.996199, 0.0857313, -0.0154007, 0, 0.17681, 0.984245, 0.0871036, -0.980504, 0.176138, 0, 2.68656, 0.463604)
 
 [node name="Taco" parent="." instance=ExtResource("13_68cjj")]
 transform = Transform3D(1, 0, 0, 0, 0.99941, 0.0343413, 0, -0.0343413, 0.99941, 0.019, 1.092, 1.487)
