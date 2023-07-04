@@ -12,12 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://5ah6ojdcq0ca" path="res://baianinho.png" id="10_yi14b"]
 [ext_resource type="Texture2D" uid="uid://dt6ingqkpd2c1" path="res://uploads_files_4355477_Sinuca_laminate_floor_03_diff_4k.png" id="11_vq0bv"]
 [ext_resource type="PackedScene" uid="uid://b5ncgfjctp36l" path="res://bola_branca.tscn" id="12_clido"]
-[ext_resource type="PackedScene" uid="uid://d2kirf65csiql" path="res://taco.tscn" id="13_68cjj"]
-[ext_resource type="PackedScene" uid="uid://btfqdiawesefy" path="res://bola_2.tscn" id="14_tvytu"]
-[ext_resource type="PackedScene" uid="uid://b6uv5focrxgar" path="res://bola_3.tscn" id="15_o5w0g"]
-[ext_resource type="PackedScene" uid="uid://d14nea8lqfo6y" path="res://bola_4.tscn" id="16_cg0p2"]
-[ext_resource type="PackedScene" uid="uid://c4amuofboqyk4" path="res://bola_5.tscn" id="17_rovrx"]
-[ext_resource type="PackedScene" uid="uid://c8iiy8uvcbp6n" path="res://bola_6.tscn" id="18_sw173"]
+[ext_resource type="PackedScene" path="res://taco.tscn" id="13_68cjj"]
+[ext_resource type="PackedScene" path="res://bola_2.tscn" id="14_tvytu"]
+[ext_resource type="PackedScene" path="res://bola_3.tscn" id="15_o5w0g"]
+[ext_resource type="PackedScene" path="res://bola_4.tscn" id="16_cg0p2"]
+[ext_resource type="PackedScene" path="res://bola_5.tscn" id="17_rovrx"]
+[ext_resource type="PackedScene" path="res://bola_6.tscn" id="18_sw173"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brfx8"]
 resource_name = "Madeira_Preta"

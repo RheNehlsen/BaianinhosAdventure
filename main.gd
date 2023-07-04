@@ -36,7 +36,7 @@ func _process(delta):
 	var pontos = conta_pontos(mesa.position.y)
 	contador.text = str(pontos)
 	
-	if pontos == 6:
+	if pontos == 5:
 		get_tree().change_scene_to_file("res://game_over.tscn")
 	
 	if bola_branca.position.y < mesa.position.y - 3:
